@@ -1,7 +1,9 @@
 function dataHandling2(arr) {
 
+    arr.splice(4.4)
     arr.splice(4, 0,"Pria", "SMA Internasional Metro")
     arr.splice(1, 1, "Roman Alamsyah Elsharawy")
+    arr.splice(2, 1,"Provinsi Bandar Lampung")
     console.log(arr);
     
     var arr2 = arr[3].split("/")

@@ -1,8 +1,8 @@
 var string ="hello world!"
-var string2 = ""
+var newString = ""
 for (let i = string.length-1; i >=0; i--) {
-    string2 += string[i]
+    newString += string[i]
 
 }
-console.log(string2);
+console.log(newString);
 

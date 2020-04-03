@@ -5,20 +5,17 @@ var input = [
                 ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
             ]
 
-
-for (let i = 0; i < input.length; i++) {
-    for (let j = 0; j < input[i].length; j++) {
-        
-    
-                
+function dataHandling(array) {
+    let result =""
+for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {             
     }
-    
-
-   let result=(`"Nomor ID:"${input[i][0]}
-"Nama Lengkap:"${input[i][1]}
-"TTL:"${input[i][2]}
-"Hobi:"${input[i][3]}\n`)
-
-
-    console.log(result);
+    result += `Nomor ID: ${array[i][0]}
+Nama Lengkap: ${array[i][1]}
+TTL: ${array[i][2]} ${array[i][3]}
+Hobi: ${array[i][4]}\n\n` 
+    }
+    return result
 }
+
+console.log(dataHandling(input))
