@@ -1,8 +1,6 @@
 function groupAnimals(animals) {
     // you can only write your code here!
-    let total = [];
     let result =[]
-    let count = 0
     for (let i = 0; i < animals.length; i++) {
         for (let j = i+1; j < animals.length-1; j++) {
             if(animals[i][0] > animals[j][0]){
@@ -10,12 +8,10 @@ function groupAnimals(animals) {
                 animals[i]=animals[j]
                 animals[j]=temp
             }
-
-            
+        
         }
     }
     for (let i = 0; i < animals.length; i++) {
-        // console.log(animals[0][0]);
         let found = false
         for (let j = 0; j < result.length; j++) {
             if (result[j][0][0] == animals[i][0]) {
@@ -23,7 +19,7 @@ function groupAnimals(animals) {
                 found = true
             }
         }
-        if (!found) {
+        if (!found) {      
             result.push([animals[i]])
         }
     }
@@ -31,7 +27,7 @@ function groupAnimals(animals) {
     
 }
     
-// return animals
+
     
   
   
